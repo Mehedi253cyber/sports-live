@@ -154,17 +154,33 @@ width:100%;
 }
 
 .btn-green{
-    background:#39ff14;
-    color:#000;
-    text-decoration:none;
-    padding:18px 35px;
-    border-radius:50px;
-    font-weight:bold;
-    transition:.3s;
+
+display:inline-block;
+
+padding:16px 38px;
+
+background:linear-gradient(135deg,#00ff88,#00c853);
+
+border-radius:60px;
+
+color:#04121d;
+
+font-weight:700;
+
+text-decoration:none;
+
+transition:.35s;
+
+box-shadow:0 0 30px rgba(0,255,136,.4);
+
 }
 
 .btn-green:hover{
-    transform:translateY(-5px);
+
+transform:translateY(-5px);
+
+box-shadow:0 0 45px rgba(0,255,136,.8);
+
 }
 
 .btn-dark{
@@ -223,10 +239,69 @@ width:100%;
 }
 
 .card{
-    background:#132235;
-    border-radius:15px;
-    padding:30px;
-    transition:.4s;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+-webkit-backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.15);
+
+border-radius:22px;
+
+padding:30px;
+
+transition:.35s;
+
+overflow:hidden;
+
+position:relative;
+
+}
+
+.card::before{
+
+content:"";
+
+position:absolute;
+
+top:-100%;
+
+left:-40%;
+
+width:180%;
+
+height:300%;
+
+background:linear-gradient(
+
+transparent,
+
+rgba(255,255,255,.08),
+
+transparent
+
+);
+
+transform:rotate(25deg);
+
+transition:.8s;
+
+}
+
+.card:hover::before{
+
+top:100%;
+
+}
+
+.card:hover{
+
+transform:translateY(-12px);
+
+box-shadow:0 25px 50px rgba(0,0,0,.45);
+
 }
 
 .card:hover{
