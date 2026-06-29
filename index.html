@@ -3,11 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sports Live</title>
+    <title>FIFA World Cup 2026 Live</title>
+
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/your-kit.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <h1>Sports Live</h1>
+    <header>
+      <div class="logo">
+        <h2>⚽ WorldCup <span>2026</span></h2>
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Matches</a>
+        <a href="#">Teams</a>
+        <a href="#">Schedule</a>
+        <a href="#">News</a>
+      </nav>
+
+      <a href="#" class="live-btn">🔴 LIVE</a>
+    </header>
+
+    <section class="hero">
+      <div class="overlay"></div>
+
+      <div class="hero-left">
+        <h5>FIFA WORLD CUP</h5>
+
+        <h1>2026</h1>
+
+        <h3>USA • CANADA • MEXICO</h3>
+
+        <p>Watch Every Match Live in HD. Never Miss A Goal.</p>
+
+        <div class="buttons">
+          <a href="#" id="watchLive" class="btn-green"> ▶ Watch Live </a>
+
+          <a href="#" class="btn-dark"> 📅 Match Schedule </a>
+        </div>
+
+        <div class="countdown">
+          <div>
+            <span id="days">000</span>
+
+            <p>Days</p>
+          </div>
+
+          <div>
+            <span id="hours">00</span>
+
+            <p>Hours</p>
+          </div>
+
+          <div>
+            <span id="minutes">00</span>
+
+            <p>Minutes</p>
+          </div>
+
+          <div>
+            <span id="seconds">00</span>
+
+            <p>Seconds</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <img src="images/trophy.png" alt="World Cup" />
+      </div>
+    </section>
+
+    <section class="matches">
+      <h2>🔥 Live Matches</h2>
+
+      <div class="cards">
+        <div class="card">
+          <span class="live">LIVE</span>
+
+          <h3>Argentina vs Brazil</h3>
+
+          <p>Kick Off 8:00 PM</p>
+
+          <a href="#">Watch Now</a>
+        </div>
+
+        <div class="card">
+          <span class="live">LIVE</span>
+
+          <h3>England vs France</h3>
+
+          <p>Kick Off 10:00 PM</p>
+
+          <a href="#">Watch Now</a>
+        </div>
+
+        <div class="card">
+          <span class="live">LIVE</span>
+
+          <h3>Spain vs Germany</h3>
+
+          <p>Kick Off 11:30 PM</p>
+
+          <a href="#">Watch Now</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 FIFA World Cup Live.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
