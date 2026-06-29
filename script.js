@@ -125,3 +125,14 @@ buttons.forEach(btn => {
 // =================================
 
 console.log("⚽ FIFA World Cup 2026 Landing Page Loaded");
+// Premium Loader
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").classList.add("loader-hide");
+
+},2200);
+
+});
